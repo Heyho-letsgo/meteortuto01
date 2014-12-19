@@ -5,6 +5,7 @@
 	<h1>Leader Board</h1>
 
 	{{> leaderboard}}
+	{{> addPlayerForm}}
 </body>
 
 
@@ -21,3 +22,11 @@
 			Selected Player: {{showSelectedPlayer.name}}
 			{{/if}}
 </template>
+
+<template name="addPlayerForm">
+	<form>
+		<input type="text" id="playerName">
+		<input type="submit" value="Add Player">
+	</form>
+
+	</template>
