@@ -23,7 +23,8 @@ if (Meteor.isClient) {
     var selectedPlayer = Session.get('selectedPlayer');
       return PlayerList.findOne(selectedPlayer);
        
-      }
+      };
+
 
   Template.leaderboard.selectedClass = function(){
       var selectedPlayer = Session.get('selectedPlayer');
@@ -31,5 +32,20 @@ if (Meteor.isClient) {
       if (selectedPlayer === playerId){
         return 'selected';
       }
-    }
+    };
+
+  Template.addPlayerForm.events({
+    'submit form': function(theEvent, theTemplate){
+        theEvent.preventDefault();
+        var playerNameVar = theTemplate.find('#playerName').value;
+        PlayerList.insert({
+          name: playerNameVar,
+          score:0
+        });
+      }
+    });
+  
+
+
+
   }
