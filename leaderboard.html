@@ -17,5 +17,7 @@
 		{{/each}}
 		<input type="button" id="increment" value="Give 5 Points" />
 	</ul>
-
+		{{#if showSelectedPlayer}}
+			Selected Player: {{showSelectedPlayer.name}}
+			{{/if}}
 </template>

@@ -19,11 +19,17 @@ if (Meteor.isClient) {
       }
   });
 
-Template.leaderboard.selectedClass = function(){
+  Template.leaderboard.showSelectedPlayer = function(){
     var selectedPlayer = Session.get('selectedPlayer');
-    var playerId = this._id;
-    if (selectedPlayer === playerId){
-      return 'selected';
+      return PlayerList.findOne(selectedPlayer);
+       
+      }
+
+  Template.leaderboard.selectedClass = function(){
+      var selectedPlayer = Session.get('selectedPlayer');
+      var playerId = this._id;
+      if (selectedPlayer === playerId){
+        return 'selected';
+      }
     }
   }
-}
