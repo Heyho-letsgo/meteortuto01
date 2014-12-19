@@ -3,7 +3,7 @@ PlayerList = new Meteor.Collection('players');
 if (Meteor.isClient) {
   
   Template.leaderboard.player = function () {
-    return PlayerList.find({}, {sort: {score: -1}});
+    return PlayerList.find({}, {sort: {score: -1, name: -1}});
   };
   
   Template.leaderboard.events({
