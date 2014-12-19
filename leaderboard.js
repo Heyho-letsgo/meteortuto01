@@ -17,6 +17,10 @@ if (Meteor.isClient) {
         var selectedPlayer = Session.get('selectedPlayer');
         PlayerList.update({_id: selectedPlayer}, {$inc: {score: 5}});
       },
+      'click #decrement': function(){
+        var selectedPlayer = Session.get('selectedPlayer');
+        PlayerList.update({_id: selectedPlayer}, {$inc: {score: -5}});
+      },
       'click #remove': function(){
         var selectedPlayer = Session.get('selectedPlayer');
          PlayerList.remove(selectedPlayer);
