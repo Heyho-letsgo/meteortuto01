@@ -1,0 +1,9 @@
+<template name="addPlayerForm">
+  {{#if currentUser}}
+      <p>You're logged in.</p>
+      <form>
+          <input type="text" id="playerName">
+          <input type="submit" value="Add Player">
+      </form>
+  {{/if}}
+</template>
