@@ -1,4 +1,4 @@
-PlayerList = new Meteor.Collection('players');
+PlayersList = new Meteor.Collection('players');
 
 if (Meteor.isClient) {
 
@@ -6,7 +6,7 @@ if (Meteor.isClient) {
 
     Template.leaderboard.player = function () {
         var currentUserId = Meteor.userId();
-        return PlayerList.find(
+        return PlayersList.find(
             {createdBy: currentUserId},
             {sort: {score: -1, name: 1}});
     };
@@ -20,21 +20,21 @@ if (Meteor.isClient) {
         },
         'click #increment': function () {
             var selectedPlayer = Session.get('selectedPlayer');
-            PlayerList.update({_id: selectedPlayer}, {$inc: {score: 5}});
+            PlayersList.update({_id: selectedPlayer}, {$inc: {score: 5}});
         },
         'click #decrement': function () {
             var selectedPlayer = Session.get('selectedPlayer');
-            PlayerList.update({_id: selectedPlayer}, {$inc: {score: -5}});
+            PlayersList.update({_id: selectedPlayer}, {$inc: {score: -5}});
         },
         'click #remove': function () {
             var selectedPlayer = Session.get('selectedPlayer');
-            PlayerList.remove(selectedPlayer);
+            PlayersList.remove(selectedPlayer);
         }
     });
 
     Template.leaderboard.showSelectedPlayer = function () {
         var selectedPlayer = Session.get('selectedPlayer');
-        return PlayerList.findOne(selectedPlayer);
+        return PlayersList.findOne(selectedPlayer);
     };
 
 
@@ -51,23 +51,28 @@ if (Meteor.isClient) {
             theEvent.preventDefault();
             var playerNameVar = theTemplate.find('#playerName').value;
             var currentUserId = Meteor.userId();
-            PlayerList.insert({
+            PlayersList.insert({
                 name: playerNameVar,
                 score: 0,
                 createdBy: currentUserId
             });
         }
     });
-
+            Meteor.call('executeLogStatement');
 
 }
 
 
 if (Meteor.isServer) {
-   console.log(PlayerList.find().fetch());
+   console.log(PlayersList.find().fetch());
     Meteor.publish('thePlayers', function(){
         var currentUserId = this.userId;
-        return PlayerList.find({createdBy: currentUserId});
+        return PlayersList.find({createdBy: currentUserId});
+    });
+    Meteor.methods({
+        'executeLogStatement' : function(){
+            console.log("You submitted the form");
+        }
     });
 
 }
