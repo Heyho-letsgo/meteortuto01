@@ -9,7 +9,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bc2366c0-44e5-4875-bbe0-a03a692238d4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/leaderboard.html" afterPath="$PROJECT_DIR$/leaderboard.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/leaderboard.js" afterPath="$PROJECT_DIR$/leaderboard.js" />
     </list>
     <ignored path="leaderboard.iws" />
@@ -37,16 +36,15 @@
       <file leaf-file-name="leaderboard.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/leaderboard.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7029703" vertical-offset="406" max-vertical-offset="810">
-              <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.40841585" vertical-offset="150" max-vertical-offset="825">
+              <caret line="26" column="61" selection-start-line="26" selection-start-column="61" selection-end-line="26" selection-end-column="61" />
               <folding>
                 <element signature="e#400#566#0" expanded="false" />
-                <element signature="e#608#758#0" expanded="false" />
-                <element signature="e#800#951#0" expanded="false" />
-                <element signature="e#990#1122#0" expanded="false" />
-                <element signature="e#1189#1308#0" expanded="false" />
-                <element signature="e#1363#1547#0" expanded="false" />
-                <element signature="e#1949#2058#0" expanded="false" />
+                <element signature="e#1171#1290#0" expanded="false" />
+                <element signature="e#1345#1529#0" expanded="false" />
+                <element signature="e#1565#1809#0" expanded="false" />
+                <element signature="e#1931#2040#0" expanded="false" />
+                <element signature="e#2107#2309#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -258,7 +256,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -269,12 +267,11 @@
           <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
           <folding>
             <element signature="e#400#566#0" expanded="false" />
-            <element signature="e#608#758#0" expanded="false" />
-            <element signature="e#800#951#0" expanded="false" />
-            <element signature="e#990#1122#0" expanded="false" />
-            <element signature="e#1189#1308#0" expanded="false" />
-            <element signature="e#1363#1547#0" expanded="false" />
-            <element signature="e#1949#2058#0" expanded="false" />
+            <element signature="e#1171#1290#0" expanded="false" />
+            <element signature="e#1345#1529#0" expanded="false" />
+            <element signature="e#1565#1809#0" expanded="false" />
+            <element signature="e#1931#2040#0" expanded="false" />
+            <element signature="e#2107#2309#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -321,16 +318,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/leaderboard.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7029703" vertical-offset="406" max-vertical-offset="810">
-          <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.40841585" vertical-offset="150" max-vertical-offset="825">
+          <caret line="26" column="61" selection-start-line="26" selection-start-column="61" selection-end-line="26" selection-end-column="61" />
           <folding>
             <element signature="e#400#566#0" expanded="false" />
-            <element signature="e#608#758#0" expanded="false" />
-            <element signature="e#800#951#0" expanded="false" />
-            <element signature="e#990#1122#0" expanded="false" />
-            <element signature="e#1189#1308#0" expanded="false" />
-            <element signature="e#1363#1547#0" expanded="false" />
-            <element signature="e#1949#2058#0" expanded="false" />
+            <element signature="e#1171#1290#0" expanded="false" />
+            <element signature="e#1345#1529#0" expanded="false" />
+            <element signature="e#1565#1809#0" expanded="false" />
+            <element signature="e#1931#2040#0" expanded="false" />
+            <element signature="e#2107#2309#0" expanded="false" />
           </folding>
         </state>
       </provider>
